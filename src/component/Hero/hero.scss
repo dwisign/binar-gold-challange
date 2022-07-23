@@ -1,0 +1,34 @@
+.hero{
+    background-color: #F1F3FF;
+    margin-top: -70px;
+    position: relative;
+    .left{
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-right: 30px;
+        h3{
+            font-weight: 600;
+        }
+    }
+    .right{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 500px;
+        img {
+            z-index: 2;
+        }
+    }
+    .blue-element{
+        background-color: #0D28A6;
+        height: 220px;
+        width: 50%;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        border-top-left-radius: 80px;
+    }
+}
