@@ -3,9 +3,10 @@ import Hero from '../../component/Hero'
 import OverView from '../../component/OverView'
 import WhyUs from '../../component/WhyUs'
 import Testimonial from '../../component/Testimonial'
-import Footer from '../../component/Footer'
-import {menuList, logo, lokasi, imgCar, imgOverview, serviceList, whyUs, testimoniData} from '../../component/const/staticData'
 import BlueCta from '../../component/BlueCta'
+import Faq from '../../component/Faq'
+import Footer from '../../component/Footer'
+import {menuList, logo, lokasi, imgCar, imgOverview, serviceList, whyUs, testimoniData, faqData} from '../../component/const/staticData'
 
 const props = {
     menuList,
@@ -15,7 +16,8 @@ const props = {
     imgOverview,
     serviceList,
     whyUs,
-    testimoniData
+    testimoniData,
+    faqData
 }
 
 
@@ -28,6 +30,7 @@ const Home = () => {
             <WhyUs {...props}/>
             <Testimonial {...props}/>
             <BlueCta {...props}/>
+            <Faq {...props}/>
             {/* <Footer />  */}
         </div>
     )
