@@ -1,4 +1,4 @@
-import './App.css'
+import './App.scss'
 import Home from './pages/Home'
 import Archive from './pages/Archive'
 import Single from './pages/Single'
@@ -9,8 +9,8 @@ function App() {
     <div>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="archive" element={<Archive />} />
-        <Route path="single" element={<Single />} />
+        <Route path="/archive" element={<Archive />} />
+        <Route path="/single/:id" element={<Single />} />
       </Routes>
     </div>
   )

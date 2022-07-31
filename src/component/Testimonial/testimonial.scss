@@ -1,0 +1,29 @@
+.testimonial{
+    text-align: center;
+    padding: 80px 0px;
+    .testimonialWrap{
+        padding: 15px;
+        .testimonialCard{
+            background-color: #F1F3FF;
+            text-align: left;
+            padding: 50px;
+            border-radius: 10px;
+            display: flex;
+            .profpic{
+                margin-right: 30px;
+                img{
+                    width: 80px;
+                    border-radius: 80px;
+                } 
+            }
+            .comment{
+                font-size: 12px;
+                line-height: 18px;
+            }
+            .credential{
+                font-size: 10px;
+            }
+        }
+    }
+    
+}

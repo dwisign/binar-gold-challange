@@ -1,0 +1,19 @@
+.filter-cars{
+    box-shadow: -2px 2px 22px -7px rgba(0,0,0,0.42);
+    -webkit-box-shadow: -2px 2px 22px -7px rgba(0,0,0,0.42);
+    -moz-box-shadow: -2px 2px 22px -7px rgba(0,0,0,0.42);
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    .btn{
+        margin-top: 32px;
+    }
+    .filter-forms{
+        display: flex;
+        column-gap: 10px;
+        .form-group{
+            width: 200px;
+        }
+    }
+}

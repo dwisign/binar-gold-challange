@@ -1,4 +1,5 @@
 import './top-menu.scss'
+import { Link } from 'react-router-dom'
 
 const  TopMenu = ({menuList, logo}) => {
     return ( 
@@ -6,7 +7,7 @@ const  TopMenu = ({menuList, logo}) => {
             <div className="container">
                 <div className="row">
                     <div className="col-md-4">
-                        <h5 className="logo">{logo}</h5>
+                        <h5 className="logo"><Link to={'/'}>{logo}</Link></h5>
                     </div>
                     <div className="col-md-8">
                         <div className="menu">
