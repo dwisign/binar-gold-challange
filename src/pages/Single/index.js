@@ -2,13 +2,17 @@ import axios from 'axios'
 import { useEffect,useState } from 'react'
 import TopMenu from '../../component/TopMenu'
 import Footer from '../../component/Footer'
-import {menuList, logo} from '../../component/const/staticData'
+import {menuList, logo, address, email, phone, socialConnect} from '../../component/const/staticData'
 import { useParams } from "react-router-dom";
 
 
 const props = {
     menuList,
-    logo
+    logo,
+    address,
+    email,
+    phone,
+    socialConnect
 }
 
 const Single = () => {
@@ -29,7 +33,6 @@ const Single = () => {
     return ( 
         <div>
             <TopMenu {...props}/> 
-            <h4>Ini Single</h4>
             {
                 !!Object.keys(data).length && (
                     <div className="container">
@@ -40,7 +43,7 @@ const Single = () => {
                     </div>
                 )
             }
-            <Footer /> 
+            <Footer {...props}/> 
         </div>
     )
 }

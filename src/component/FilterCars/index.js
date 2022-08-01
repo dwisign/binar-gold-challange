@@ -30,6 +30,7 @@ const filterCars = ({handleChangeName, handleSearch, data, notFound}) => {
                         name="kategori"
                         placeholder="Kategori"
                         type="text"
+                        disabled
                         />
                     </FormGroup>
 
@@ -42,6 +43,7 @@ const filterCars = ({handleChangeName, handleSearch, data, notFound}) => {
                         name="harga"
                         placeholder="Harga"
                         type="text"
+                        disabled
                         />
                     </FormGroup>
 
@@ -53,6 +55,7 @@ const filterCars = ({handleChangeName, handleSearch, data, notFound}) => {
                             id="exampleSelect"
                             name="select"
                             type="select"
+                            disabled
                         >
                             <option>True</option>
                             <option>False</option>
@@ -63,7 +66,7 @@ const filterCars = ({handleChangeName, handleSearch, data, notFound}) => {
                 </div>   
             </div>
 
-            <div className="cars-list">
+            <div className="car-list">
                 {
                     !!notFound && (
                         <Alert color="danger">
@@ -75,16 +78,20 @@ const filterCars = ({handleChangeName, handleSearch, data, notFound}) => {
                     {!!data.length && //kalau data length true (lebih dari nol) maka
                         data.map((item) => (
                             <div className="col-md-4">
-                                <div>
-                                    <img src={item.image} className="img-fluid"/>
+                                <div className='car-item'>
+                                    <div className='car-image'>
+                                        <img src={item.image} className="img-fluid"/>
+                                    </div>
+                                    <div className='car-description'>
+                                        <h5>{item.name}</h5>
+                                        <p>{item.price} / Hari</p>
+                                    </div>
+                                    <Link to={`/single/${item.id}`}>
+                                        <div className="d-grid">
+                                            <Button color="success" className='btn-block'>Pilih Mobil</Button>
+                                        </div>
+                                    </Link>
                                 </div>
-                                <div>
-                                    <h1>{item.name}</h1>
-                                    <p>{item.price}</p>
-                                </div>
-                                <Link to={`/single/${item.id}`}>
-                                    <Button color="success">Pilih Mobil</Button>
-                                </Link>
                             </div>
                         ))}
                 </div>

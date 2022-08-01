@@ -12,15 +12,6 @@ const  Footer = ({logo,address, email, phone, menuList, socialConnect}) => {
                         </div>
                     </div>
                     <div className='col-md-3'>
-                        <p>
-                            <b>Address :</b> <br></br>
-                            {address}
-                            <br></br><br></br>
-                            {email}<br></br>
-                            {phone}
-                        </p>
-                    </div>
-                    <div className='col-md-3'>
                         <div className='footer-link'>
                             <p><b>Information</b></p>
                             {
@@ -31,6 +22,15 @@ const  Footer = ({logo,address, email, phone, menuList, socialConnect}) => {
                                 })
                             }
                         </div>
+                    </div>
+                    <div className='col-md-3'>
+                        <p>
+                            <b>Address :</b> <br></br>
+                            {address}
+                            <br></br><br></br>
+                            {email}<br></br>
+                            {phone}
+                        </p>
                     </div>
                     <div className='col-md-3'>
                         <div className='social-connect'>

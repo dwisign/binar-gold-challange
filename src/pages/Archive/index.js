@@ -4,10 +4,20 @@ import TopMenu from '../../component/TopMenu'
 import Hero from '../../component/Hero'
 import Footer from '../../component/Footer'
 import FilterCars from '../../component/FilterCars'
-import {menuList, logo, imgCar} from '../../component/const/staticData'
+import {menuList, logo, imgCar, address, email, phone, socialConnect} from '../../component/const/staticData'
 
 
 import './archive.scss'
+
+const props = {
+    menuList,
+    logo,
+    imgCar,
+    address,
+    email,
+    phone,
+    socialConnect
+}
 
 const Archive = () => {
     const [data, setData] = useState([])
@@ -15,12 +25,6 @@ const Archive = () => {
     const [fdata,setFdata] = useState([])
     const [notFound, setNotFound] = useState(false)
 
-    const props = {
-        menuList,
-        logo,
-        imgCar
-    }
-    
     useEffect(() => {
         axios
         .get('https://bootcamp-rent-car.herokuapp.com/admin/car')
@@ -64,7 +68,7 @@ const Archive = () => {
             <div className="container">
                 <FilterCars data={!fdata.length ? data : fdata} {...propsSearch}/>
             </div>
-            {/* <Footer />  */}
+            <Footer {...props}/> 
         </div>
     )
 }

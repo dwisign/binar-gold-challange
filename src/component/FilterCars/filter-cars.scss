@@ -6,14 +6,29 @@
     padding: 30px;
     border-radius: 10px;
     margin-bottom: 50px;
-    .btn{
-        margin-top: 32px;
-    }
     .filter-forms{
         display: flex;
         column-gap: 10px;
-        .form-group{
+        justify-content: space-between;
+        .form-control,.form-select,.btn{
             width: 200px;
+        }
+        .btn{
+            height: 40px;
+            margin-top: 30px;
+        }
+    }
+}
+.car-list{
+    .car-item{
+        border: 1px solid #dedede;
+        padding: 30px;
+        margin-bottom: 30px;
+        border-radius: 10px;
+        .car-image{
+            padding: 30px;
+            height: 200px;
+            overflow-y: hidden;
         }
     }
 }
