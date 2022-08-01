@@ -22,10 +22,10 @@ const Faq = ({faqData}) => {
                             faqData.map((item) => {
                                 return(
                                     <AccordionItem>
-                                        <AccordionHeader targetId={'1'}>
+                                        <AccordionHeader targetId={item.idFaq}>
                                             {item.question}
                                         </AccordionHeader>
-                                        <AccordionBody accordionId={'1'}>
+                                        <AccordionBody accordionId={item.idFaq}>
                                             <p>{item.answer}</p>
                                         </AccordionBody>
                                     </AccordionItem>

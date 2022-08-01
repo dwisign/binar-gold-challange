@@ -93,27 +93,32 @@ const testimoniData = [
 ]
 
 const faqData = [
-    {
+    {   
+        idFaq: '1',
         question: 'Apa saja syarat yang dibutuhkan?',
         answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod'
 
     },
     {
+        idFaq: '2',
         question: 'Berapa hari minimal sewa mobil lepas kunci?',
         answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod'
 
     },
     {
+        idFaq: '3',
         question: 'Berapa hari sebelumnya sabaiknya booking sewa mobil?',
         answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod'
 
     },
     {
+        idFaq: '4',
         question: 'Apakah Ada biaya antar-jemput?',
         answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod'
 
     },
     {
+        idFaq: '5',
         question: 'Bagaimana jika terjadi kecelakaan',
         answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod'
 
