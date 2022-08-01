@@ -6,7 +6,21 @@ import Testimonial from '../../component/Testimonial'
 import BlueCta from '../../component/BlueCta'
 import Faq from '../../component/Faq'
 import Footer from '../../component/Footer'
-import {menuList, logo, lokasi, imgCar, imgOverview, serviceList, whyUs, testimoniData, faqData} from '../../component/const/staticData'
+import {
+    menuList, 
+    logo, 
+    lokasi, 
+    imgCar, 
+    imgOverview, 
+    serviceList, 
+    whyUs, 
+    testimoniData, 
+    faqData, 
+    address, 
+    email, 
+    phone,
+    socialConnect
+} from '../../component/const/staticData'
 
 const props = {
     menuList,
@@ -17,7 +31,11 @@ const props = {
     serviceList,
     whyUs,
     testimoniData,
-    faqData
+    faqData,
+    address,
+    email,
+    phone,
+    socialConnect
 }
 
 
@@ -31,6 +49,7 @@ const Home = () => {
             <Testimonial {...props}/>
             <BlueCta {...props}/>
             <Faq {...props}/>
+            <Footer {...props}/>
             {/* <Footer />  */}
         </div>
     )

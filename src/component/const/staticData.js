@@ -7,6 +7,17 @@ import icon4 from '../../assets/icon_4.png'
 import profpic1 from '../../assets/user-pict/women/1.jpg'
 import profpic2 from '../../assets/user-pict/men/1.jpg'
 import profpic3 from '../../assets/user-pict/women/5.jpg'
+import facebook from '../../assets/icon_facebook.png'
+import instagram from '../../assets/icon_instagram.png'
+import emailFooter from '../../assets/icon_mail.png'
+import twitter from '../../assets/icon_twitter.png'
+import twitch from '../../assets/icon_twitch.png'
+
+const logo = 'Momain'
+const lokasi = 'Ciledug'
+const address = 'Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000'
+const email = 'binarcarrental@gmail.com'
+const phone = '081-233-334-808'
 
 const menuList = [
     {
@@ -26,8 +37,7 @@ const menuList = [
         name: 'FAQ'
     }
 ]
-const logo = 'Momain'
-const lokasi = 'Ciledug'
+
 const serviceList = [
     'Sewa Mobil Dengan Supir di Bali 12 Jam',
     'Sewa Mobil Lepas Kunci di Bali 24 Jam',
@@ -35,6 +45,7 @@ const serviceList = [
     'Gratis Antar - Jemput Mobil di Bandara',
     'Layanan Airport Transfer / Drop In Out'
 ]
+
 const whyUs = [
     {
         icon : icon1,
@@ -57,6 +68,7 @@ const whyUs = [
         desc : 'Sopir yang profesional, berpengalaman, jujur, ramah dan selalu tepat waktu'
     }
 ]
+
 const testimoniData = [
     {
         profpic : profpic1,
@@ -106,7 +118,6 @@ const testimoniData = [
         age : 48,
         location : 'Citayam'
     }
-
 ]
 
 const faqData = [
@@ -140,7 +151,29 @@ const faqData = [
         answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod'
 
     }
+]
 
+const socialConnect = [
+    {
+        link: '#',
+        icon: facebook
+    },
+    {
+        link: '#',
+        icon: instagram
+    },
+    {
+        link: '#',
+        icon: twitter
+    },
+    {
+        link: '#',
+        icon: emailFooter
+    },
+    {
+        link: '#',
+        icon: twitch
+    }
 ]
 
 export {
@@ -152,5 +185,9 @@ export {
     imgOverview,
     whyUs,
     testimoniData,
-    faqData
+    faqData,
+    address,
+    email,
+    phone,
+    socialConnect
 }
