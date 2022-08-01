@@ -2,7 +2,7 @@ import './why-us.scss'
 
 const  WhyUs = ({whyUs}) => {
     return ( 
-        <div className='WhyUs'>
+        <div className='WhyUs' id="2">
             <div className='container'>
                 <h5>Why Us?</h5>
                 <p>Mengapa harus pilih Binar Car Rental?</p>

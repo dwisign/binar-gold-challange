@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const Hero = ({imgCar,lokasi}) => {
     return ( 
-        <div className="hero">
+        <div className="hero" id="#">
             <div className="container">
                 <div className="row">
                     <div className="col-md-6">

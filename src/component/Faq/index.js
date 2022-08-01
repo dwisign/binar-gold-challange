@@ -9,7 +9,7 @@ const Faq = ({faqData}) => {
     }
     //const id = id + 1
     return(
-        <div className='faq'>
+        <div className='faq' id="4">
             <div className='container'>
                 <div className='row'>
                     <div className='col-md-5'>

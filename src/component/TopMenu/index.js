@@ -12,7 +12,7 @@ const  TopMenu = ({menuList, logo}) => {
                     <div className="col-md-8">
                         <div className="menu">
                             {menuList.map((item) => ( 
-                                <div className="list-menu"><a href="#">{item}</a></div>
+                                <div className="list-menu"><a href={item.link}>{item.name}</a></div>
                             ))}
                         </div>
                     </div>

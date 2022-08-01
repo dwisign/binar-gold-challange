@@ -32,7 +32,7 @@ const Testimonial = ({testimoniData}) => {
     }
 
     return(
-        <div className="testimonial">
+        <div className="testimonial" id="3">
             <h5>Testimonial</h5>
             <p>Berbagai review positif dari para pelanggan kami</p>
             <Slider {...settings}>

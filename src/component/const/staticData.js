@@ -8,7 +8,24 @@ import profpic1 from '../../assets/user-pict/women/1.jpg'
 import profpic2 from '../../assets/user-pict/men/1.jpg'
 import profpic3 from '../../assets/user-pict/women/5.jpg'
 
-const menuList = ['Our Services', 'Why Us', 'Testimonial', 'FAQ']
+const menuList = [
+    {
+        link: '#1',
+        name: 'Our Services'
+    },
+    {
+        link: '#2',
+        name: 'Why Us'
+    },
+    {
+        link: '#3',
+        name: 'Testimonial'
+    },
+    {
+        link: '#4',
+        name: 'FAQ'
+    }
+]
 const logo = 'Momain'
 const lokasi = 'Ciledug'
 const serviceList = [
