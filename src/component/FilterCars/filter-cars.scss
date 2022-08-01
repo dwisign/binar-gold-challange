@@ -2,7 +2,9 @@
     box-shadow: -2px 2px 22px -7px rgba(0,0,0,0.42);
     -webkit-box-shadow: -2px 2px 22px -7px rgba(0,0,0,0.42);
     -moz-box-shadow: -2px 2px 22px -7px rgba(0,0,0,0.42);
-    background-color: #fff;
+    //background-color: #fff;
+    background: rgba(255,255,255,0.5);
+    backdrop-filter: blur(5px);
     padding: 30px;
     border-radius: 10px;
     margin-bottom: 50px;

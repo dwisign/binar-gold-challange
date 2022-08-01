@@ -1,12 +1,22 @@
+import { useState } from 'react'
 import { FormGroup, Label, Input, Button, Alert } from 'reactstrap';
 import { Link } from 'react-router-dom'
 import './filter-cars.scss'
 
-const filterCars = ({handleChangeName, handleSearch, data, notFound}) => {
+const FilterCars = ({handleChangeName, handleSearch, data, notFound}) => {
+    const [visible, setVisible] = useState(true)
+    const onDismiss = () => setVisible(false)
     return (
         <div>
             <div className="filter-cars">
                 <b><h5>Pencarianmu</h5></b><br></br>
+                {
+                    !!notFound && (
+                        <Alert color="danger" isOpen={visible} toggle={onDismiss}>
+                            Mobil tidak ditemukan
+                        </Alert>
+                    )
+                }
                 <div className="filter-forms">
                     <FormGroup>
                         <Label for="namaMobil">
@@ -67,13 +77,6 @@ const filterCars = ({handleChangeName, handleSearch, data, notFound}) => {
             </div>
 
             <div className="car-list">
-                {
-                    !!notFound && (
-                        <Alert color="danger">
-                            Mobil tidak ditemukan
-                        </Alert>
-                    )
-                }
                 <div className="row">
                     {!!data.length && //kalau data length true (lebih dari nol) maka
                         data.map((item) => (
@@ -100,4 +103,4 @@ const filterCars = ({handleChangeName, handleSearch, data, notFound}) => {
     )
 }
 
-export default filterCars
+export default FilterCars

@@ -1,0 +1,28 @@
+.car-detail{
+    .title-bar{
+        background: #F1F3FF;
+        padding: 120px 0px 30px;
+        margin-bottom: 50px;
+        .btn-wrap{
+            text-align: right;
+        }
+    }
+    
+    .left{
+        border: 1px solid #dedede;
+        border-radius: 10px;
+        padding: 30px;
+    }
+    .right{
+        border: 1px solid #dedede;
+        border-radius: 10px;
+        padding: 30px;
+        .car-image{
+            padding: 30px;
+            img{
+                width: 100%;
+            }
+        }
+        
+    }
+}
