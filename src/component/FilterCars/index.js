@@ -80,7 +80,7 @@ const FilterCars = ({handleChangeName, handleSearch, data, notFound}) => {
                 <div className="row">
                     {!!data.length && //kalau data length true (lebih dari nol) maka
                         data.map((item) => (
-                            <div className="col-md-4">
+                            <div className="col-lg-4 col-md-6">
                                 <div className='car-item'>
                                     <div className='car-image'>
                                         <img src={item.image} className="img-fluid"/>

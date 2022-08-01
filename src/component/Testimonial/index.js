@@ -27,14 +27,39 @@ const Testimonial = ({testimoniData}) => {
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 3,
-        slidesToScroll: 3
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        responsive: [
+            {
+                breakpoint: 1780,
+                settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 3
+                }
+            },
+            {
+              breakpoint: 1280,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+              }
+            },
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     }
 
     return(
         <div className="testimonial" id="3">
-            <h5>Testimonial</h5>
-            <p>Berbagai review positif dari para pelanggan kami</p>
+            <div className='container'>
+                <h5>Testimonial</h5>
+                <p>Berbagai review positif dari para pelanggan kami</p>
+            </div>
             <Slider {...settings}>
                 {
                     testimoniData.map((item) => {

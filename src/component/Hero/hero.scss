@@ -40,3 +40,16 @@
         border-top-left-radius: 80px;
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .hero{
+        .left{
+            height: auto;
+            padding-top: 120px;
+        }
+        .right{
+            height: auto;
+            padding-top: 50px;
+        }
+    }
+}

@@ -10,7 +10,7 @@ const  WhyUs = ({whyUs}) => {
                     {
                         whyUs.map((item) => {
                             return(
-                                <div className='col-md-3'>
+                                <div className='col-lg-3 col-md-6'>
                                     <div className='card-why-us'>
                                         <img src={item.icon}></img>
                                         <h6>{item.title}</h6>
