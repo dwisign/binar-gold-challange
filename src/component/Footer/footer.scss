@@ -6,4 +6,15 @@
         flex-direction: column;
         font-size: 14px;
     }
+    .footer-logo{
+        h4{
+            font-weight: 800;
+        }
+    }
+    .social-connect{
+        .item-connect{
+            display: flex;
+            column-gap: 10px;
+        }
+    }
 }
