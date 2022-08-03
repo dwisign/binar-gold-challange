@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { FormGroup, Label, Input, Button, Alert } from 'reactstrap';
+import { FormGroup, Label, Input, Button, Alert } from 'reactstrap'
 import { Link } from 'react-router-dom'
 import './filter-cars.scss'
 

@@ -1,3 +1,4 @@
+import {useState} from "react"
 import TopMenu from '../../component/TopMenu'
 import Hero from '../../component/Hero'
 import OverView from '../../component/OverView'
@@ -22,24 +23,30 @@ import {
     socialConnect
 } from '../../component/const/staticData'
 
-const props = {
-    menuList,
-    logo,
-    lokasi,
-    imgCar,
-    imgOverview,
-    serviceList,
-    whyUs,
-    testimoniData,
-    faqData,
-    address,
-    email,
-    phone,
-    socialConnect
-}
-
-
 const Home = () => {
+    const [showSidebar, setShowSidebar] = useState(false)
+    const handleSidebar = () =>{
+        setShowSidebar(!showSidebar)
+    }
+
+    const props = {
+        menuList,
+        logo,
+        lokasi,
+        imgCar,
+        imgOverview,
+        serviceList,
+        whyUs,
+        testimoniData,
+        faqData,
+        address,
+        email,
+        phone,
+        socialConnect,
+        showSidebar,
+        handleSidebar
+    }
+
     return (
         <div>
             <TopMenu {...props}/>

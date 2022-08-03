@@ -10,20 +10,16 @@ import { Button, Alert } from 'reactstrap'
 import './single.scss'
 
 
-const props = {
-    menuList,
-    logo,
-    address,
-    email,
-    phone,
-    socialConnect
-}
-
 const Single = () => {
     const { id } = useParams()
     const [data, setData] = useState([])
 
     console.log(id)
+
+    const [showSidebar, setShowSidebar] = useState(false)
+    const handleSidebar = () =>{
+        setShowSidebar(!showSidebar)
+    }
 
     useEffect(() => {
         axios
@@ -31,6 +27,18 @@ const Single = () => {
         .then((res) => setData(res.data))
         .catch((err) => console.log(err))
     },[])
+
+    const props = {
+        menuList,
+        logo,
+        address,
+        email,
+        phone,
+        socialConnect,
+        showSidebar,
+        handleSidebar
+    }
+
 
     //console.log(data)
 

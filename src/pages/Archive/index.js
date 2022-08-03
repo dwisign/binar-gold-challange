@@ -9,15 +9,6 @@ import {menuList, logo, imgCar, address, email, phone, socialConnect} from '../.
 
 import './archive.scss'
 
-const props = {
-    menuList,
-    logo,
-    imgCar,
-    address,
-    email,
-    phone,
-    socialConnect
-}
 
 const Archive = () => {
     const [data, setData] = useState([])
@@ -49,6 +40,23 @@ const Archive = () => {
         if(!newArr.length){
             setNotFound(true)
         }
+    }
+
+    const [showSidebar, setShowSidebar] = useState(false)
+    const handleSidebar = () =>{
+        setShowSidebar(!showSidebar)
+    }
+
+    const props = {
+        menuList,
+        logo,
+        imgCar,
+        address,
+        email,
+        phone,
+        socialConnect,
+        handleSidebar,
+        showSidebar
     }
 
     const propsSearch = {

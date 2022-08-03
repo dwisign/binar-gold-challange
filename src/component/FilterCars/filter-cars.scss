@@ -34,3 +34,15 @@
         }
     }
 }
+
+@media only screen and (max-width: 1040px) {
+    .filter-cars{
+        .filter-forms{
+            flex-wrap: wrap;
+            flex-direction: column;
+            .form-control,.form-select,.btn{
+                width: 100%;
+            }
+        }
+    }
+}

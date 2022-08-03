@@ -23,12 +23,31 @@
             }
         }
     }
+    .burger-menu{
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 768px) {
     .top-menu{
         .menu{
             display: none;
+        }
+        .burger-menu{
+            display: flex;
+            justify-content: flex-end;
+            padding-top: 15px;
+            span{
+                cursor: pointer;
+                color: #0d28a6;
+            }
+        }
+        .menu-mobile{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            text-align: right;
+            height: 100vh;
         }
     }
 }
