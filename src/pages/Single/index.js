@@ -51,10 +51,10 @@ const Single = () => {
                         <div className='title-bar'>
                             <div className='container'>
                                 <div className='row'>
-                                    <div className='col-10'>
+                                    <div className='col-9'>
                                         <h5>Paket Sewa {data.name}</h5>
                                     </div>
-                                    <div className='col-2'>
+                                    <div className='col-3'>
                                         <div className='btn-wrap'>
                                             <Link to={'/archive'}>
                                                 <Button color="success" to={'/archive'} size="sm">&laquo; Back</Button>

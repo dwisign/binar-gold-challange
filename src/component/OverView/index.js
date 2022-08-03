@@ -1,6 +1,6 @@
 import './overview.scss'
 
-const OverView = ({imgOverview, serviceList}) => {
+const OverView = ({imgOverview, serviceList, iconCheck, lokasi}) => {
     return (
         <div className="overview" id="1">
             <div className="container">
@@ -13,11 +13,11 @@ const OverView = ({imgOverview, serviceList}) => {
                     <div className="col-md-6">
                         <div className="right">
                             <h5>Best Car Rental for any kind of trip in !</h5>
-                            <p>Sewa mobil di (Lokasimu) bersama Binar Car Rental jaminan harga lebih murah dibandingkan yang lain, kondisi mobil baru, serta kualitas pelayanan terbaik untuk perjalanan wisata, bisnis, wedding, meeting, dll.</p>
+                            <p>Sewa mobil di {lokasi} bersama Binar Car Rental jaminan harga lebih murah dibandingkan yang lain, kondisi mobil baru, serta kualitas pelayanan terbaik untuk perjalanan wisata, bisnis, wedding, meeting, dll.</p>
                             <ul className="service-list">
                                     {
                                         serviceList.map((item) => {
-                                            return <li>{item}</li>
+                                            return <li><img src={iconCheck} ></img> {item}</li>
                                         })
                                     }
                             </ul>

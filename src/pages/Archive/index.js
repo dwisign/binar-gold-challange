@@ -4,7 +4,7 @@ import TopMenu from '../../component/TopMenu'
 import Hero from '../../component/Hero'
 import Footer from '../../component/Footer'
 import FilterCars from '../../component/FilterCars'
-import {menuList, logo, imgCar, address, email, phone, socialConnect} from '../../component/const/staticData'
+import {menuList, logo, imgCar, address, email, phone, socialConnect, lokasi} from '../../component/const/staticData'
 
 
 import './archive.scss'
@@ -56,7 +56,8 @@ const Archive = () => {
         phone,
         socialConnect,
         handleSidebar,
-        showSidebar
+        showSidebar,
+        lokasi
     }
 
     const propsSearch = {

@@ -1,17 +1,18 @@
 import imgCar from '../../assets/car.png'
 import imgOverview from '../../assets/img_service.png'
-import icon1 from '../../assets/icon_1.png'
-import icon2 from '../../assets/icon_2.png'
-import icon3 from '../../assets/icon_3.png'
-import icon4 from '../../assets/icon_4.png'
+import iconCheck from '../../assets/icon_check.svg'
+import icon1 from '../../assets/icon_1.svg'
+import icon2 from '../../assets/icon_2.svg'
+import icon3 from '../../assets/icon_3.svg'
+import icon4 from '../../assets/icon_4.svg'
 import profpic1 from '../../assets/user-pict/women/1.jpg'
 import profpic2 from '../../assets/user-pict/men/1.jpg'
 import profpic3 from '../../assets/user-pict/women/5.jpg'
-import facebook from '../../assets/icon_facebook.png'
-import instagram from '../../assets/icon_instagram.png'
-import emailFooter from '../../assets/icon_mail.png'
-import twitter from '../../assets/icon_twitter.png'
-import twitch from '../../assets/icon_twitch.png'
+import facebook from '../../assets/icon_facebook.svg'
+import instagram from '../../assets/icon_instagram.svg'
+import emailFooter from '../../assets/icon_mail.svg'
+import twitter from '../../assets/icon_twitter.svg'
+import twitch from '../../assets/icon_twitch.svg'
 
 const logo = 'Momain'
 const lokasi = 'Ciledug'
@@ -183,11 +184,12 @@ export {
     serviceList,
     imgCar,
     imgOverview,
+    iconCheck,
     whyUs,
     testimoniData,
     faqData,
     address,
     email,
     phone,
-    socialConnect
+    socialConnect,
 }

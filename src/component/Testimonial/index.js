@@ -64,6 +64,7 @@ const Testimonial = ({testimoniData}) => {
                 {
                     testimoniData.map((item) => {
                         return(
+
                             <div className="testimonialWrap">
                                 <div className="testimonialCard">
                                     <div className="profpic">
@@ -76,6 +77,7 @@ const Testimonial = ({testimoniData}) => {
                                     </div>
                                 </div>
                             </div>
+
                         )
                     })
                 }

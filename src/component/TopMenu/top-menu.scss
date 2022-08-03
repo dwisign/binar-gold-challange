@@ -30,6 +30,9 @@
 
 @media only screen and (max-width: 768px) {
     .top-menu{
+        .logo{
+            padding-top: 20px;
+        }
         .menu{
             display: none;
         }
@@ -48,6 +51,13 @@
             justify-content: flex-start;
             text-align: right;
             height: 100vh;
+            margin-top: 30px;
+            width: 100%;
+            .list-menu{
+                font-size: 18px;
+                border-bottom: 1.5px dotted #999;
+                padding: 20px 0px;
+            }
         }
     }
 }
